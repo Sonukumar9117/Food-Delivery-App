@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "167796205954",
+    "firebase_url": "https://ethereal-temple-418721-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ethereal-temple-418721",
+    "storage_bucket": "ethereal-temple-418721.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167796205954:android:661e1452433f25af61c79b",
+        "android_client_info": {
+          "package_name": "com.example.fooddeliveryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIhmfVobrkQ84oHY8803GF5u6t_jj1NRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

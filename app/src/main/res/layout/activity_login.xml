@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.LoginActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Food"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    style="@style/textStyle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    style="@style/textStyle"
+                    android:textStyle="normal"
+                    android:text="App"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/userEdt"
+                android:layout_width="330dp"                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:background="@drawable/edittext_background"/>
+            <EditText
+                android:id="@+id/userPass"
+                android:layout_width="330dp"                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:hint="password"
+                android:inputType="textWebPassword"
+                android:textAlignment="center"
+                android:background="@drawable/edittext_background"/>
+            <TextView
+                android:layout_width="330dp"                android:layout_height="match_parent"
+                android:text="Forget Password?"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                style="@style/textStyle"
+                android:textSize="20sp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginBtns"
+                android:layout_marginTop="16dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                style="@style/textStyle"
+                android:background="@drawable/red_button_background"
+                />
+            <LinearLayout
+                android:layout_width="330dp"                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="match_parent"                    android:layout_height="2dp"
+                    android:layout_weight="1"
+
+                    android:background="#0D47A1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textStyle"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:text="OR" />
+                <View
+                    android:layout_width="match_parent"                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="#0D47A1"
+                    />
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="330dp"        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/google" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/twitter" />
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="330dp"                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:textSize="15sp"
+                    android:text="Haven't Registered Yet?"/>
+
+                <TextView
+                    android:id="@+id/signUpBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:text="SignUp"
+                    android:textColor="@color/red"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+      </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
