@@ -1,6 +1,8 @@
 package com.example.fooddeliveryapp.Activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -35,22 +37,22 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        SharedPreferences sharedPreferences=getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+        String userName=sharedPreferences.getString("username",null).toString();
+        binding.userName.setText(userName);
         initLocation();
         initTime();
         initPrice();
         initBestFood();
         initCategory();
         setVaraible();
-        binding.searchBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String text=binding.searchText.getText().toString();
-                if(!text.isEmpty()){
-                    Intent intent=new Intent(MainActivity.this,ListFoodActivity.class);
-                    intent.putExtra("text",text);
-                    intent.putExtra("isSearch",true);
-                    startActivity(intent);
-                }
+        binding.searchBtn.setOnClickListener(view -> {
+            String text=binding.searchText.getText().toString();
+            if(!text.isEmpty()){
+                Intent intent=new Intent(MainActivity.this,ListFoodActivity.class);
+                intent.putExtra("text",text);
+                intent.putExtra("isSearch",true);
+                startActivity(intent);
             }
         });
     }
@@ -199,7 +201,4 @@ public class MainActivity extends BaseActivity {
         });
 
     }
-
-
-
 }

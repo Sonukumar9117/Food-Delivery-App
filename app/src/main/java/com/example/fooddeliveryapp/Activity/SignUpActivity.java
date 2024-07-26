@@ -6,11 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
+import com.example.fooddeliveryapp.Helper.Database;
 
 public class SignUpActivity extends BaseActivity {
     public String Tag="FoodLover";
@@ -34,10 +30,18 @@ public class SignUpActivity extends BaseActivity {
         binding.signupBtns.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email=binding.userEdt.getText().toString();
+                String userName=binding.userName.getText().toString();
+                String userEmail=binding.userEdt.getText().toString();
                 String password=binding.userPass.getText().toString();
                 String confirmPassword=binding.userPassConfirmation.getText().toString().trim();
-                if(password.length()<6){
+
+                if(userName.length()==0){
+                    Toast.makeText(SignUpActivity.this,"Plx Enter user Name",Toast.LENGTH_LONG).show();
+                }
+                else if(userEmail.length()==0){
+                    Toast.makeText(SignUpActivity.this,"Plz Enter user Email",Toast.LENGTH_LONG).show();
+                }
+                else if(password.length()<6){
                     Toast.makeText(SignUpActivity.this,"Your Password must be 6 character",Toast.LENGTH_LONG).show();
                     return;
                 }
@@ -45,23 +49,13 @@ public class SignUpActivity extends BaseActivity {
                     Toast.makeText(SignUpActivity.this,"Password doesn't match",Toast.LENGTH_LONG).show();
                 }
                 else {
+                    Database db=new Database(getApplicationContext(),"foodDelivery",null,1);
+                    db.register(userName,userEmail,password);
+                    Toast.makeText(SignUpActivity.this, "SignUp Successfully", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
                     finish();
                 }
 
-
-
-//                mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {
-//                        if(task.isComplete()){
-//                            Log.i(Tag,"onComplete");
-//                        }else{
-//                            Log.i(Tag,"failure:"+task.getException());
-//                            Toast.makeText(SignUpActivity.this,"Authentication failed",Toast.LENGTH_LONG).show();
-//                        }
-//                    }
-//                });
             }
         });
     }
