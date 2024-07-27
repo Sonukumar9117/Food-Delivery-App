@@ -56,6 +56,7 @@ public class DetailActivity extends AppCompatActivity {
             object.setNumberInCart(num);
             managmentCart.insertFood(object);
             startActivity(new Intent(getApplicationContext(),CartActivity.class));
+            finish();
         });
     }
 

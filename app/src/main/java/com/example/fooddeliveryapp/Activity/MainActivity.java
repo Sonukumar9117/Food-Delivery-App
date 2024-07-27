@@ -53,6 +53,7 @@ public class MainActivity extends BaseActivity {
                 intent.putExtra("text",text);
                 intent.putExtra("isSearch",true);
                 startActivity(intent);
+                finish();
             }
         });
     }

@@ -39,6 +39,7 @@ public class LoginActivity extends BaseActivity {
                     editor.putString("username",email);
                     editor.apply();
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    finish();
                 }
                 else Toast.makeText(LoginActivity.this, "Invalid user name or password", Toast.LENGTH_SHORT).show();
 
