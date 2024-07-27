@@ -10,8 +10,8 @@ This is a simple Food Delivery App for Android devices that allows users to orde
 - User-friendly interface with intuitive design.
   
 ## Database
--Firebase
--SQLite
+- Firebase
+- SQLite
 
 ## Installation
 To install the Food Delivery App on your Android device, follow these steps:
