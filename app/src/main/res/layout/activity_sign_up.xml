@@ -53,42 +53,26 @@
 
             <EditText
                 android:id="@+id/user_name"
-                android:layout_width="330dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
-                android:background="@drawable/edittext_background"
                 android:hint="Enter User Name"
-                android:inputType="text"
-                android:textAlignment="center" />
+                android:inputType="textEmailAddress"
+                style="@style/edit_text_style" />
             <EditText
                 android:id="@+id/userEdt"
-                android:layout_width="330dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
-                android:background="@drawable/edittext_background"
                 android:hint="Enter Email Address"
-                android:inputType="textEmailAddress"
-                android:textAlignment="center" />
+                style="@style/edit_text_style"
+               />
 
             <EditText
                 android:id="@+id/userPass"
-                android:layout_width="330dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
                 android:inputType="textWebPassword"
-                android:background="@drawable/edittext_background"
                 android:hint="New Password"
-                android:textAlignment="center" />
+                style="@style/edit_text_style"/>
 
             <EditText
                 android:id="@+id/userPassConfirmation"
-                android:layout_width="330dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
                 android:inputType="textWebPassword"
-                android:background="@drawable/edittext_background"
                 android:hint="Confirm Password"
-                android:textAlignment="center" />
+                style="@style/edit_text_style" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signupBtns"

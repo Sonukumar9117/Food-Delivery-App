@@ -52,20 +52,14 @@
             </LinearLayout>
             <EditText
                 android:id="@+id/userEdt"
-                android:layout_width="330dp"                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
                 android:hint="user name"
                 android:inputType="textEmailAddress"
-                android:textAlignment="center"
-                android:background="@drawable/edittext_background"/>
+                style="@style/edit_text_style"/>
             <EditText
                 android:id="@+id/userPass"
-                android:layout_width="330dp"                android:layout_height="50dp"
-                android:layout_marginTop="32dp"
                 android:hint="password"
-                android:inputType="textWebPassword"
-                android:textAlignment="center"
-                android:background="@drawable/edittext_background"/>
+                style="@style/edit_text_style"
+                android:inputType="textWebPassword" />
             <TextView
                 android:layout_width="330dp"                android:layout_height="match_parent"
                 android:text="Forget Password?"
