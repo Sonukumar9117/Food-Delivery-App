@@ -33,7 +33,7 @@ public class DetailActivity extends AppCompatActivity {
 
 //        Glide.with(DetailActivity.this).load(object.getImagePath()).into(binding.detailPic);
         Glide.with(DetailActivity.this).load(object.getImagePath()).transform(new CenterCrop(),new RoundedCorners(30),new FitCenter()).into(binding.detailPic);
-        binding.priceTT.setText("$"+object.getPrice());
+        binding.priceTT.setText("Rs"+object.getPrice());
         binding.timeTxt.setText(object.getTimeValue()+"min");
         binding.titleTxt.setText(object.getTitle());
         binding.descriptionTxt.setText(object.getDescription());
@@ -43,13 +43,13 @@ public class DetailActivity extends AppCompatActivity {
         binding.quantityPlus.setOnClickListener(view -> {
             num=num+1;
             binding.numTxt.setText(num+"");
-            binding.totalPriceTxt.setText("$"+(num*object.getPrice())+"");
+            binding.totalPriceTxt.setText("Rs"+(num*object.getPrice())+"");
         });
         binding.quantityMinus.setOnClickListener(view -> {
             if(num!=0){
                 num=num-1;
                 binding.numTxt.setText(num+"");
-                binding.totalPriceTxt.setText("$"+(num*object.getPrice()));
+                binding.totalPriceTxt.setText("Rs"+(num*object.getPrice()));
             }
         });
         binding.addTocartBtn.setOnClickListener(view -> {

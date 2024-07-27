@@ -75,7 +75,7 @@
                     android:id="@+id/priceTT"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$30"
+                    android:text="Rs0"
                     android:textColor="@color/red"
                     android:textSize="22sp"
                     android:textStyle="bold" />
@@ -260,7 +260,7 @@
             android:id="@+id/totalPriceTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$0"
+            android:text="Rs0"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/blue_grey"

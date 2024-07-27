@@ -35,7 +35,7 @@ public class BestFoodAdapter extends RecyclerView.Adapter<BestFoodAdapter.viewHo
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         holder.titleTxt.setText(items.get(position).getTitle());
-        holder.priceTxt.setText("$" + items.get(position).getPrice());
+        holder.priceTxt.setText("Rs" + items.get(position).getPrice());
         holder.starTxt.setText("" + items.get(position).getStar());
         holder.timeTxt.setText(items.get(position).getTimeValue() + "min");
 

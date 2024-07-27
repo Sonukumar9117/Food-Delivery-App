@@ -47,10 +47,10 @@ public class CartActivity extends BaseActivity{
         tax=Math.round(managmentCart.getTotalFee()*percentTax*100.0)/100;//subTax
         double total=Math.round((managmentCart.getTotalFee()+tax+delivery)*100)/100;
         double itemTotal=Math.round(managmentCart.getTotalFee()*100)/100;
-        binding.totalFeeTxt.setText("$"+total);
-        binding.deliveryTxt.setText("$"+tax);
-        binding.tax.setText("$"+itemTotal);
-        binding.totalAmount.setText("$"+(tax+total+itemTotal));
+        binding.totalFeeTxt.setText("Rs"+total);
+        binding.deliveryTxt.setText("Rs"+tax);
+        binding.tax.setText("Rs"+itemTotal);
+        binding.totalAmount.setText("Rs"+(tax+total+itemTotal));
     }
     private void initList() {
         if (managmentCart.getListCart().isEmpty()) {

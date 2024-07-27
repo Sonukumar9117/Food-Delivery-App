@@ -40,7 +40,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.viewHo
      holder.titleTxt.setText(items.get(position).getTitle());
      holder.startTxt.setText(items.get(position).getStar()+"");
      holder.timeTxt.setText(items.get(position).getTimeValue()+"min");
-     holder.priceTxt.setText("$"+ items.get(position).getPrice()+"");
+     holder.priceTxt.setText("Rs"+ items.get(position).getPrice()+"");
         Glide.with(context).load(items.get(position).getImagePath()).
                 transform(new CenterCrop(),new RoundedCorners(30))
                 .into(holder.pic);

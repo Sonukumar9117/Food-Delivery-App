@@ -44,8 +44,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.viewHolder>
     @Override
     public void onBindViewHolder(@NonNull CardAdapter.viewHolder holder, int position) {
    holder.title.setText(list.get(position).getTitle());
-   holder.feeEachItem.setText("$"+list.get(position).getPrice());
-   holder.totalEachItem.setText("$"+(list.get(position).getNumberInCart()*list.get(position).getPrice()));
+   holder.feeEachItem.setText("Rs"+list.get(position).getPrice());
+   holder.totalEachItem.setText("Rs"+(list.get(position).getNumberInCart()*list.get(position).getPrice()));
    holder.num.setText(list.get(position).getNumberInCart()+"");
         Glide.with(holder.itemView.getContext()).load(list.get(position).getImagePath())
                 .transform(new CenterCrop(),new RoundedCorners(30))

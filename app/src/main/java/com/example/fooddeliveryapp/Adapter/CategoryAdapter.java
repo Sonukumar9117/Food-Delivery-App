@@ -83,14 +83,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewho
 //                .into(holder.pic);
 
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(context, ListFoodActivity.class);
-                intent.putExtra("CategoryId",items.get(position).getId());
-                intent.putExtra("CategoryName",items.get(position).getName());
-                context.startActivity(intent);
-            }
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent=new Intent(context, ListFoodActivity.class);
+            intent.putExtra("CategoryId",items.get(position).getId());
+            intent.putExtra("CategoryName",items.get(position).getName());
+            context.startActivity(intent);
         });
     }
 
