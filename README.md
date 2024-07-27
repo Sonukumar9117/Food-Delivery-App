@@ -13,13 +13,25 @@ This is a simple Food Delivery App for Android devices that allows users to orde
 - Firebase
 - SQLite
 
-## Screenshots
-![splashscreen (1)](https://github.com/user-attachments/assets/09a4c728-9f34-4892-88db-d3b5eab033b7)
-![Login Page (1)](https://github.com/user-attachments/assets/24a855df-8192-434d-97c8-92838e3c7378)
-![user Registration (1)](https://github.com/user-attachments/assets/2a6597a6-1efa-4cbc-aa3d-3ccab43c5510)
-![Home Screen (1)](https://github.com/user-attachments/assets/11f75b5c-f97a-4713-a0c3-04b4bb921360)
-![fooddetail (1)](https://github.com/user-attachments/assets/1dfd575c-09b1-42f0-bd85-ef67d2ae0e79)
-![mycart (1)](https://github.com/user-attachments/assets/202a1f87-d250-4040-b6a5-8e99e1fd6c30)
+# Screenshots
+## Splash Screen
+![Splash Screen](https://github.com/user-attachments/assets/09a4c728-9f34-4892-88db-d3b5eab033b7)
+
+## Login Page
+![Login Page](https://github.com/user-attachments/assets/24a855df-8192-434d-97c8-92838e3c7378)
+
+## User Registration
+![User Registration](https://github.com/user-attachments/assets/2a6597a6-1efa-4cbc-aa3d-3ccab43c5510)
+
+## Home Screen
+![Home Screen](https://github.com/user-attachments/assets/11f75b5c-f97a-4713-a0c3-04b4bb921360)
+
+## Food Detail
+![Food Detail](https://github.com/user-attachments/assets/1dfd575c-09b1-42f0-bd85-ef67d2ae0e79)
+
+## My Cart
+![My Cart](https://github.com/user-attachments/assets/202a1f87-d250-4040-b6a5-8e99e1fd6c30)
+
 
 ## Installation
 To install the Food Delivery App on your Android device, follow these steps:
