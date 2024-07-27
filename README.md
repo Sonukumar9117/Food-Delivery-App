@@ -13,6 +13,9 @@ This is a simple Food Delivery App for Android devices that allows users to orde
 - Firebase
 - SQLite
 
+## Screenshots
+![Login Page (1)](https://github.com/user-attachments/assets/24a855df-8192-434d-97c8-92838e3c7378)
+
 ## Installation
 To install the Food Delivery App on your Android device, follow these steps:
 1. Clone this repository or download the ZIP file.
